@@ -4,13 +4,14 @@
 int invertidor(){
     int i = 0;
     char cadenita[] = "Miguel";
-    char partes;
+    char newCadenita[100]="";
     int lon=strlen(cadenita);
 
     for (i = 0; i < lon; i++) {
-        partes=cadenita[lon-1-i];
-        printf("%c",partes);
+        newCadenita[i]=cadenita[lon-1-i];
     }
+
+    printf("%s",newCadenita);
 
     return 0;
 }
